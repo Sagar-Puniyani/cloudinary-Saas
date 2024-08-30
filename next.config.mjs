@@ -2,6 +2,11 @@
 const nextConfig = {
     images: {
       domains: ['res.cloudinary.com', 'img.clerk.com']
+    },
+    api : {
+        bodyParser:{
+            sizeLimit: '100mb'
+        }
     }
 };
 
