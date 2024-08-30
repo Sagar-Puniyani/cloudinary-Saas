@@ -36,7 +36,7 @@ const VideoUpload = () => {
             const response = await axios.post("/api/video-upload", formData);
             if (response.status !== 200) throw new Error("File is not uploaded");
             console.log("Error while uploading file");
-            router.push("/")
+            router.push("/home")
         } catch (error) {
             console.log(error)
         } finally {

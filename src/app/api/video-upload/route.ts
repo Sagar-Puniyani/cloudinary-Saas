@@ -52,6 +52,8 @@ export async function POST(request: NextRequest) {
             return NextResponse.json({ error: "File not found " }, { status: 405 })
         }
 
+        console.log("originalSize : ", originalSize);
+
         const bytes = await file.arrayBuffer();
         const buffer = Buffer.from(bytes);
 
