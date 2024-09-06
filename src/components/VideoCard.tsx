@@ -108,7 +108,7 @@ const VideoCard: React.FC<VideoCardProps> = ({ video, onDownload }) => {
       </figure>
       <div className="card-body p-4">
         <h2 className="card-title text-lg font-bold">{video.title}</h2>
-        <p className="text-sm text-base-content opacity-70 mb-4">
+        <p className="text-sm text-base-content h-20 overflow-hidden opacity-70 mb-4">
           {video.description}
         </p>
         <p className="text-sm text-base-content opacity-70 mb-4">
