@@ -1,12 +1,20 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-      domains: ['res.cloudinary.com', 'img.clerk.com']
-    },
-    api : {
-        bodyParser:{
-            sizeLimit: '100mb'
-        }
+      remotePatterns : [
+        {
+          protocol: 'https',
+          hostname: 'res.cloudinary.com',
+          port: '',
+          pathname: '/**',
+        },
+        {
+          protocol: 'https',
+          hostname: 'img.clerk.com',
+          port: '',
+          pathname: '/**',
+        },
+      ]
     }
 };
 

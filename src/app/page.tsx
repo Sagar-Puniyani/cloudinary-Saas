@@ -74,7 +74,7 @@ export default function Home() {
 
       <footer className="footer p-10 bg-neutral text-neutral-content footer-center">
         <div>
-          <p>© 2024 Your Company. All rights reserved.</p>
+          <p>© 2024 Sagar Puniyani. All rights reserved.</p>
         </div>
       </footer>
     </div>
